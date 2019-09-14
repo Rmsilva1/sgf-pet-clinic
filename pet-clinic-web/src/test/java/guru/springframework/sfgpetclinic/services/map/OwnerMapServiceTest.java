@@ -12,12 +12,12 @@ class OwnerMapServiceTest {
 
     OwnerMapService ownerMapService;
     final Long ownerId = 1l;
-    private String lastName = "Smith";
+    final String lastName = "Smith";
 
     @BeforeEach
     void setUp() {
         ownerMapService = new OwnerMapService(new PetTypeMapService(), new PetServiceMap());
-        ownerMapService.save(Owner.builder().id(ownerId).build());
+        ownerMapService.save(Owner.builder().id(ownerId).lastName("Smith").build());
     }
 
     @Test
