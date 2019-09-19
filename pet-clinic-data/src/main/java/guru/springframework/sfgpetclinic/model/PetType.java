@@ -21,7 +21,6 @@ public class PetType extends BaseEntity {
         this.name = name;
     }
 
-
     @Column(name = "name")
     private String name;
 
