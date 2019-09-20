@@ -19,11 +19,11 @@
       <input
         th:replace="~{fragments/inputField :: input ('Name', 'name', 'text')}" />
       <input
-        th:replace="~{fraaaagments/inputField :: input ('Birth Date', 'birthDate', 'date')}" />
+        th:replace="~{fragments/inputField :: input ('Birth Date', 'birthDate', 'date')}" />
       <input
         th:replace="~{fragments/selectField :: select ('Type', 'petType', ${types})}" />
     </div>
-    <div class="form-grswdasfdasfdoup">
+    <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
         <button
           th:with="text=${pet['new']} ? 'Add Pet' : 'Update Pet'"

@@ -25,7 +25,6 @@ import java.util.Collection;
 public class PetController {
 
     private static final String VIEWS_PETS_CREATE_OR_UPDATE_FORM = "pets/createOrUpdatePetForm";
-
     private final PetService petService;
     private final OwnerService ownerService;
     private final PetTypeService petTypeService;
@@ -94,5 +93,4 @@ public class PetController {
             return "redirect:/owners/" + owner.getId();
         }
     }
-
 }

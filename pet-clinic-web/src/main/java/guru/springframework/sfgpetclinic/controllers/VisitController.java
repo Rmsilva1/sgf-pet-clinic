@@ -73,7 +73,6 @@ public class VisitController {
             return "pets/createOrUpdateVisitForm";
         } else {
             visitService.save(visit);
-
             return "redirect:/owners/{ownerId}";
         }
     }
